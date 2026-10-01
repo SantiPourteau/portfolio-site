@@ -5,16 +5,14 @@ education, and selected ML/AI work.
 
 ## Current phase
 
-Content verification and implementation preparation. Astro with static output
-and Cloudflare Workers Static Assets are the selected MVP direction; no external
-hosting project has been created yet. The visual system and domain remain open.
+The bilingual MVP is live on Cloudflare Workers Static Assets:
 
-Before public deployment, define:
+- [English](https://santiago-pourteau.santiago-pourteau-portfolio.workers.dev/en/)
+- [Español](https://santiago-pourteau.santiago-pourteau-portfolio.workers.dev/es/)
 
-- the minimum publishable content;
-- accessibility, performance, SEO, and analytics requirements;
-- maintenance expectations and deployment constraints;
-- the evidence and visuals available for each featured project.
+The current release has been checked in production mode with Lighthouse for
+performance, accessibility, best practices, and SEO. A custom domain and
+automatic GitHub builds remain open.
 
 The stack rationale and alternatives live in `docs/STACK.md`. Project planning
 lives in `docs/PROJECT.md`; cross-project facts and decisions live in Portfolio
@@ -35,4 +33,14 @@ Before handing off a change, run:
 ```sh
 npm run check
 npm run build
+```
+
+## Deployment
+
+Cloudflare configuration lives in `wrangler.jsonc`. After authenticating with
+Wrangler, publish a verified build with:
+
+```sh
+npm run check
+npm run deploy
 ```

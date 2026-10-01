@@ -11,13 +11,11 @@ and where to inspect further evidence.
 A concise, truthful, fast, accessible site containing verified profile,
 experience, education, selected work, and contact paths in English and Spanish.
 
-The first content draft lives in `docs/CONTENT.md`. Its structure can guide the
-initial implementation, but claims and localized public copy must be approved
-before deployment.
+The approved first-release content lives in `docs/CONTENT.md` and is implemented
+as equivalent English and Spanish pages.
 
-The selected implementation direction is Astro with static output, hosted on
-Cloudflare Workers Static Assets after a local production build is ready. See
-`docs/STACK.md` for the rationale and alternatives.
+The site uses Astro with static output and is deployed on Cloudflare Workers
+Static Assets. See `docs/STACK.md` for the rationale and alternatives.
 
 ## Non-goals for now
 
@@ -41,9 +39,9 @@ Cloudflare Workers Static Assets after a local production build is ready. See
 
 ## Open decisions
 
-- First-release content and case studies.
-- Visual direction and reusable content model.
-- Analytics, domain, and contact approach.
+- Custom domain.
+- Whether lightweight analytics would provide enough value to justify adding it.
+- Future case studies and downloadable CV versions.
 
 ## Success signals
 

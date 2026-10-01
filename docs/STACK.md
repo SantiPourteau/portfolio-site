@@ -1,7 +1,7 @@
 # Stack and hosting decision
 
-Status: selected for the MVP on 2026-10-01. No hosting project or paid resource
-has been created yet.
+Status: selected and deployed for the MVP on 2026-10-01. No paid resource or
+custom domain has been added.
 
 ## Requirements driving the decision
 
@@ -32,7 +32,9 @@ platform.
 
 ## Selected hosting direction
 
-Use **Cloudflare Workers Static Assets** with Cloudflare's Git integration.
+Use **Cloudflare Workers Static Assets**. The first release is deployed through
+the checked-in Wrangler configuration; Cloudflare's GitHub integration remains
+pending its one-time GitHub App authorization.
 
 - Production builds deploy from `main`.
 - Non-production branches and pull requests receive preview builds and URLs.
@@ -91,10 +93,11 @@ first external deployment.
 
 ## Implementation sequence
 
-1. Commit the approved planning changes.
-2. Scaffold a minimal Astro project without optional integrations.
-3. Define the bilingual content model and locale routing.
-4. Implement and review the page structure before visual polish.
-5. Add build, accessibility, link, and responsive checks.
-6. Create the Cloudflare project only after the local production build is ready
-   for a public preview.
+1. Commit the approved planning changes. Completed.
+2. Scaffold a minimal Astro project without optional integrations. Completed.
+3. Define the bilingual content model and locale routing. Completed.
+4. Implement and review the page structure and visual system. Completed.
+5. Add build, accessibility, link, responsive, and SEO checks. Completed.
+6. Create and audit the public Cloudflare preview. Completed.
+7. Authorize Cloudflare's GitHub App and enable automatic builds from `main`.
+8. Connect a custom domain after the public preview is approved.
