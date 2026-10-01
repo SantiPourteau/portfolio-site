@@ -33,8 +33,8 @@ platform.
 ## Selected hosting direction
 
 Use **Cloudflare Workers Static Assets**. The first release is deployed through
-the checked-in Wrangler configuration; Cloudflare's GitHub integration remains
-pending its one-time GitHub App authorization.
+the checked-in Wrangler configuration, with Cloudflare's GitHub integration
+connected to `SantiPourteau/portfolio-site` for automatic builds from `main`.
 
 - Production builds deploy from `main`.
 - Non-production branches and pull requests receive preview builds and URLs.
@@ -100,4 +100,5 @@ first external deployment.
 5. Add build, accessibility, link, responsive, and SEO checks. Completed.
 6. Create and audit the public Cloudflare preview. Completed.
 7. Authorize Cloudflare's GitHub App and enable automatic builds from `main`.
+   Completed.
 8. Connect a custom domain after the public preview is approved.
