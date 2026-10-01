@@ -142,9 +142,15 @@ export const siteContent: Record<Locale, SiteContent> = {
       ],
     },
     writing: {
-      title: "Selected writing",
-      introduction: "Technical articles I wrote or co-authored.",
+      title: "Selected publications",
+      introduction: "Papers and technical articles I co-authored.",
       articles: [
+        {
+          title: "Convolutional Kolmogorov-Arnold Networks",
+          summary:
+            "A 2024 paper introducing convolutional KAN layers and evaluating them against conventional CNNs on Fashion-MNIST, including configurations with similar accuracy and roughly half the parameters.",
+          href: "https://arxiv.org/abs/2406.13155",
+        },
         {
           title: "The Unseen Threat: Building Trust by Eradicating Algorithmic Bias",
           summary:
@@ -246,9 +252,15 @@ export const siteContent: Record<Locale, SiteContent> = {
       ],
     },
     writing: {
-      title: "Escritura seleccionada",
-      introduction: "Artículos técnicos que escribí o coescribí.",
+      title: "Publicaciones seleccionadas",
+      introduction: "Papers y artículos técnicos que coescribí.",
       articles: [
+        {
+          title: "Convolutional Kolmogorov-Arnold Networks",
+          summary:
+            "Paper de 2024 que introduce capas convolucionales KAN y las evalúa frente a CNN convencionales en Fashion-MNIST, incluyendo configuraciones con precisión similar y aproximadamente la mitad de los parámetros.",
+          href: "https://arxiv.org/abs/2406.13155",
+        },
         {
           title: "The Unseen Threat: Building Trust by Eradicating Algorithmic Bias",
           summary:

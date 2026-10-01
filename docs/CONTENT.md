@@ -87,10 +87,15 @@ demanding ML/AI problems where sound evaluation and strong engineering matter.
   harmonization, conversational business analytics, automated research, and
   messaging assistants.
 
-**Selected writing**
+**Selected publications**
 
-Technical articles I wrote or co-authored:
+Papers and technical articles I co-authored:
 
+- [Convolutional Kolmogorov-Arnold
+  Networks](https://arxiv.org/abs/2406.13155), a 2024 paper introducing
+  convolutional KAN layers and evaluating them against conventional CNNs on
+  Fashion-MNIST, including configurations with similar accuracy and roughly
+  half the parameters.
 - [The Unseen Threat: Building Trust by Eradicating Algorithmic
   Bias](https://wollenlabs.substack.com/p/the-unseen-threat-building-trust),
   a technical overview of group-level evaluation, fairness criteria and their
@@ -100,9 +105,10 @@ Technical articles I wrote or co-authored:
   a practical comparison of ReAct, Plan-and-Execute, ReWOO, Tree-of-Thoughts,
   and multi-agent patterns.
 
-Present both as evidence of technical synthesis and communication, not as
-original research. The MVP should use two compact article links rather than a
-full blog or publication archive.
+Present the Conv-KAN paper as co-authored research without claiming a specific
+individual contribution until that contribution is documented. Present the two
+Wollen Labs articles as evidence of technical synthesis and communication. The
+MVP should use a compact publication block rather than a full archive.
 
 **Publication note:** keep examples anonymized until project-level disclosure
 permission and Santiago's exact ownership are confirmed. Add metrics only when
@@ -213,13 +219,12 @@ without reading as an application to a single company.
 ## Explicit exclusions from the MVP
 
 - Thesis detail while the research remains in progress.
-- Convolutional KANs unless a later narrative genuinely needs it.
 - Unverified performance, adoption, scale, or business-impact metrics.
 - Exhaustive technology or course lists.
 - Testimonials, personal blog, CMS, analytics, contact form, or backend without
   a clear need.
-- A top-level Writing page or navigation item; the MVP only needs a compact
-  Selected writing block for the two co-authored Wollen Labs articles.
+- A top-level Publications page or navigation item; the MVP only needs a compact
+  Selected publications block.
 - A claim of sole authorship for Bumbledesa.
 
 ## Content still required before implementation
