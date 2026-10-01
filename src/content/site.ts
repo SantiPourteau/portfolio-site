@@ -64,7 +64,7 @@ type SiteContent = {
 export const siteContent: Record<Locale, SiteContent> = {
   en: {
     meta: {
-      title: "Santiago Pourteau — AI Engineer",
+      title: "Santiago Pourteau | AI Engineer",
       description:
         "AI engineer building reliable machine-learning systems, data pipelines, and software products.",
     },
@@ -72,7 +72,7 @@ export const siteContent: Record<Locale, SiteContent> = {
       skipToContent: "Skip to content",
       languageSwitcher: "Change language",
       primaryNavigation: "Primary navigation",
-      home: "Santiago Pourteau — Home",
+      home: "Santiago Pourteau, Home",
     },
     nav: [
       { href: "#about", label: "About" },
@@ -97,7 +97,7 @@ export const siteContent: Record<Locale, SiteContent> = {
       title: "Experience",
       role: "AI Engineer",
       company: "Wollen Labs (now Luno)",
-      dates: "April 2025 — April 2026",
+      dates: "April 2025 to April 2026",
       bullets: [
         "Translated business and client requirements into feasible AI system designs.",
         "Built Python services for LLM and agent workflows connected to databases, queues, messaging channels, and external APIs.",
@@ -107,7 +107,7 @@ export const siteContent: Record<Locale, SiteContent> = {
     work: {
       title: "Selected work",
       project: "Bumbledesa",
-      category: "Team academic project — distributed product engineering",
+      category: "Team academic project: distributed product engineering",
       summary:
         "A social-location product spanning a mobile app, an administration backoffice, specialized backend services, deployment infrastructure, testing, security, and distributed observability.",
       linkLabel: "Explore the GitHub organization",
@@ -174,7 +174,7 @@ export const siteContent: Record<Locale, SiteContent> = {
   },
   es: {
     meta: {
-      title: "Santiago Pourteau — Ingeniero de IA",
+      title: "Santiago Pourteau | Ingeniero de IA",
       description:
         "Ingeniero de IA enfocado en sistemas de machine learning confiables, pipelines de datos y productos de software.",
     },
@@ -182,7 +182,7 @@ export const siteContent: Record<Locale, SiteContent> = {
       skipToContent: "Saltar al contenido",
       languageSwitcher: "Cambiar idioma",
       primaryNavigation: "Navegación principal",
-      home: "Santiago Pourteau — Inicio",
+      home: "Santiago Pourteau, Inicio",
     },
     nav: [
       { href: "#about", label: "Sobre mí" },
@@ -207,7 +207,7 @@ export const siteContent: Record<Locale, SiteContent> = {
       title: "Experiencia",
       role: "AI Engineer",
       company: "Wollen Labs (actualmente Luno)",
-      dates: "Abril de 2025 — abril de 2026",
+      dates: "Abril de 2025 a abril de 2026",
       bullets: [
         "Traduje necesidades de negocio y de clientes en diseños viables de sistemas de IA.",
         "Construí servicios en Python para flujos con LLMs y agentes conectados con bases de datos, colas, canales de mensajería y APIs externas.",
@@ -217,7 +217,7 @@ export const siteContent: Record<Locale, SiteContent> = {
     work: {
       title: "Proyectos destacados",
       project: "Bumbledesa",
-      category: "Proyecto académico grupal — ingeniería de producto distribuido",
+      category: "Proyecto académico grupal: ingeniería de producto distribuido",
       summary:
         "Un producto social basado en ubicación que incluye una aplicación móvil, un backoffice de administración, servicios backend especializados, infraestructura de despliegue, testing, seguridad y observabilidad distribuida.",
       linkLabel: "Explorar la organización en GitHub",
