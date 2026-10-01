@@ -1,0 +1,142 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { siteContent, type Locale } from "../content/site";
+
+interface Props {
+  lang: Locale;
+}
+
+const { lang } = Astro.props as { lang: Locale };
+const content = siteContent[lang];
+const alternateLanguage = lang === "en" ? "es" : "en";
+const alternateLabel = lang === "en" ? "ES" : "EN";
+---
+
+<BaseLayout
+  lang={lang}
+  title={content.meta.title}
+  description={content.meta.description}
+  skipLabel={content.accessibility.skipToContent}
+>
+  <header class="site-header">
+    <a class="wordmark" href={`/${lang}/`} aria-label={content.accessibility.home}>
+      SP
+    </a>
+
+    <nav aria-label={content.accessibility.primaryNavigation}>
+      <ul>
+        {content.nav.map((item) => <li><a href={item.href}>{item.label}</a></li>)}
+      </ul>
+    </nav>
+
+    <a
+      class="language-switch"
+      href={`/${alternateLanguage}/`}
+      lang={alternateLanguage}
+      hreflang={alternateLanguage}
+      aria-label={content.accessibility.languageSwitcher}
+    >
+      {alternateLabel}
+    </a>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" aria-labelledby="hero-title">
+      <p class="eyebrow">{content.hero.eyebrow}</p>
+      <h1 id="hero-title">{content.hero.headline}</h1>
+      <p class="hero-copy">{content.hero.supportingCopy}</p>
+      <div class="actions">
+        <a class="primary-action" href="#work">{content.hero.workAction}</a>
+        <a href="https://github.com/SantiPourteau">GitHub</a>
+        <a href="https://www.linkedin.com/in/santiago-pourteau-1bba8619a/">LinkedIn</a>
+      </div>
+    </section>
+
+    <section id="about" class="content-section" aria-labelledby="about-title">
+      <p class="section-index">01</p>
+      <div>
+        <h2 id="about-title">{content.about.title}</h2>
+        <p>{content.about.body}</p>
+      </div>
+    </section>
+
+    <section id="experience" class="content-section" aria-labelledby="experience-title">
+      <p class="section-index">02</p>
+      <div>
+        <h2 id="experience-title">{content.experience.title}</h2>
+        <article>
+          <div class="item-heading">
+            <div>
+              <h3>{content.experience.role}</h3>
+              <p>{content.experience.company}</p>
+            </div>
+            <p>{content.experience.dates}</p>
+          </div>
+          <ul class="detail-list">
+            {content.experience.bullets.map((bullet) => <li>{bullet}</li>)}
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="work" class="content-section" aria-labelledby="work-title">
+      <p class="section-index">03</p>
+      <div>
+        <h2 id="work-title">{content.work.title}</h2>
+        <article class="project-card">
+          <p class="eyebrow">{content.work.category}</p>
+          <h3>{content.work.project}</h3>
+          <p>{content.work.summary}</p>
+          <a href="https://github.com/Bumbledesa">{content.work.linkLabel} <span aria-hidden="true">↗</span></a>
+        </article>
+      </div>
+    </section>
+
+    <section id="education" class="content-section" aria-labelledby="education-title">
+      <p class="section-index">04</p>
+      <div>
+        <h2 id="education-title">{content.education.title}</h2>
+        <article>
+          <div class="item-heading">
+            <div>
+              <h3>{content.education.degree}</h3>
+              <p>{content.education.institution}</p>
+            </div>
+            <p>{content.education.status}</p>
+          </div>
+          <p>{content.education.summary}</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="writing" class="content-section" aria-labelledby="writing-title">
+      <p class="section-index">05</p>
+      <div>
+        <h2 id="writing-title">{content.writing.title}</h2>
+        <p>{content.writing.introduction}</p>
+        <div class="article-list">
+          {content.writing.articles.map((article) => (
+            <article>
+              <h3><a href={article.href}>{article.title} <span aria-hidden="true">↗</span></a></h3>
+              <p>{article.summary}</p>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section" aria-labelledby="contact-title">
+      <p class="eyebrow">{content.contact.title}</p>
+      <h2 id="contact-title">{content.contact.body}</h2>
+      <div class="actions">
+        <a class="primary-action" href="https://www.linkedin.com/in/santiago-pourteau-1bba8619a/">LinkedIn</a>
+        <a href="https://github.com/SantiPourteau">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© {new Date().getFullYear()} Santiago Pourteau</p>
+    <p>{content.footer}</p>
+  </footer>
+</BaseLayout>

@@ -19,3 +19,20 @@ Before public deployment, define:
 The stack rationale and alternatives live in `docs/STACK.md`. Project planning
 lives in `docs/PROJECT.md`; cross-project facts and decisions live in Portfolio
 HQ.
+
+## Local development
+
+```sh
+npm install
+npm run dev
+```
+
+The site is available at `/en/` and `/es/`; `/` redirects to `/en/` in the
+static build.
+
+Before handing off a change, run:
+
+```sh
+npm run check
+npm run build
+```
