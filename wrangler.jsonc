@@ -2,6 +2,17 @@
   "$schema": "./node_modules/wrangler/config-schema.json",
   "name": "santiago-pourteau",
   "compatibility_date": "2026-10-01",
+  "workers_dev": true,
+  "routes": [
+    {
+      "pattern": "santiagopourteau.com",
+      "custom_domain": true
+    },
+    {
+      "pattern": "www.santiagopourteau.com",
+      "custom_domain": true
+    }
+  ],
   "assets": {
     "directory": "./dist"
   }

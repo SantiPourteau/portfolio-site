@@ -39,7 +39,6 @@ Static Assets. See `docs/STACK.md` for the rationale and alternatives.
 
 ## Open decisions
 
-- Custom domain.
 - Whether lightweight analytics would provide enough value to justify adding it.
 - Future case studies and downloadable CV versions.
 

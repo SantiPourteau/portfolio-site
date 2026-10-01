@@ -12,6 +12,23 @@ const { lang, title, description, skipLabel } = Astro.props;
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
 const englishUrl = new URL("/en/", Astro.site);
 const spanishUrl = new URL("/es/", Astro.site);
+const profileSchema = {
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  url: canonicalUrl.href,
+  mainEntity: {
+    "@type": "Person",
+    "@id": "https://santiagopourteau.com/#person",
+    name: "Santiago Pourteau",
+    url: "https://santiagopourteau.com/",
+    jobTitle: "AI Engineer",
+    description,
+    sameAs: [
+      "https://github.com/SantiPourteau",
+      "https://www.linkedin.com/in/santiago-pourteau-1bba8619a/",
+    ],
+  },
+};
 ---
 
 <!doctype html>
@@ -20,6 +37,7 @@ const spanishUrl = new URL("/es/", Astro.site);
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="description" content={description} />
+    <meta name="robots" content="index, follow" />
     <meta name="generator" content={Astro.generator} />
     <meta property="og:type" content="website" />
     <meta property="og:title" content={title} />
@@ -33,6 +51,7 @@ const spanishUrl = new URL("/es/", Astro.site);
     <link rel="alternate" hreflang="es" href={spanishUrl} />
     <link rel="alternate" hreflang="x-default" href={englishUrl} />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <script type="application/ld+json" set:html={JSON.stringify(profileSchema)} />
     <title>{title}</title>
   </head>
   <body>

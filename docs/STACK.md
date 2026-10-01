@@ -1,7 +1,7 @@
 # Stack and hosting decision
 
-Status: selected and deployed for the MVP on 2026-10-01. No paid resource or
-custom domain has been added.
+Status: selected and deployed for the MVP on 2026-10-01. The canonical custom
+domain is `santiagopourteau.com`.
 
 ## Requirements driving the decision
 
@@ -101,4 +101,5 @@ first external deployment.
 6. Create and audit the public Cloudflare preview. Completed.
 7. Authorize Cloudflare's GitHub App and enable automatic builds from `main`.
    Completed.
-8. Connect a custom domain after the public preview is approved.
+8. Connect a custom domain after the public preview is approved. Completed with
+   `santiagopourteau.com`.

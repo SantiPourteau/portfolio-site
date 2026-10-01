@@ -7,12 +7,12 @@ education, and selected ML/AI work.
 
 The bilingual MVP is live on Cloudflare Workers Static Assets:
 
-- [English](https://santiago-pourteau.santiago-pourteau-portfolio.workers.dev/en/)
-- [Español](https://santiago-pourteau.santiago-pourteau-portfolio.workers.dev/es/)
+- [English](https://santiagopourteau.com/en/)
+- [Español](https://santiagopourteau.com/es/)
 
 The current release has been checked in production mode with Lighthouse for
 performance, accessibility, best practices, and SEO. Automatic Cloudflare builds
-run from pushes to `main`; a custom domain remains open.
+run from pushes to `main`, and `santiagopourteau.com` is the canonical domain.
 
 The stack rationale and alternatives live in `docs/STACK.md`. Project planning
 lives in `docs/PROJECT.md`; cross-project facts and decisions live in Portfolio
