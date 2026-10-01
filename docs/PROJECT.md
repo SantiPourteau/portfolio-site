@@ -11,6 +11,9 @@ and where to inspect further evidence.
 A concise, truthful, fast, accessible site containing verified profile,
 experience, education, selected work, and contact paths.
 
+The first content draft lives in `docs/CONTENT.md`. Approve and revise that
+document before selecting or scaffolding the implementation stack.
+
 ## Non-goals for now
 
 - Building a content platform before recurring writing exists.
