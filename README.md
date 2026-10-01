@@ -5,17 +5,17 @@ education, and selected ML/AI work.
 
 ## Current phase
 
-Discovery and content verification. The framework, hosting provider, visual
-system, and domain have intentionally not been selected yet.
+Content verification and implementation preparation. Astro with static output
+and Cloudflare Workers Static Assets are the selected MVP direction; no external
+hosting project has been created yet. The visual system and domain remain open.
 
-Before implementation, define:
+Before public deployment, define:
 
 - the minimum publishable content;
-- whether any behavior truly requires a dynamic backend;
 - accessibility, performance, SEO, and analytics requirements;
 - maintenance expectations and deployment constraints;
 - the evidence and visuals available for each featured project.
 
-Choose the smallest stack that satisfies those requirements. Project planning
+The stack rationale and alternatives live in `docs/STACK.md`. Project planning
 lives in `docs/PROJECT.md`; cross-project facts and decisions live in Portfolio
 HQ.

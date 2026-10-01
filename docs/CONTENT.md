@@ -1,11 +1,16 @@
 # Portfolio MVP content
 
-Status: working draft for review. This is not yet public copy.
+Status: English working draft for review. This is not yet public copy.
 
-The initial language proposed here is English because it keeps the portfolio
-useful beyond a single local employer. Spanish or a bilingual version remains an
-open product decision. Do not implement language switching before the content is
-approved.
+The first public version must provide equivalent English and Spanish content.
+This document currently holds the English source draft; the Spanish copy should
+be written and reviewed after the claims and structure are approved, and before
+the site is published. Both locales must share the same underlying facts, dates,
+links, and content status so they cannot drift independently.
+
+Use stable locale routes such as `/en/` and `/es/`, with a visible language
+switch that preserves the equivalent page or section. The final root redirect
+and default locale remain implementation decisions.
 
 ## Page metadata
 
@@ -83,11 +88,18 @@ demanding ML/AI problems where sound evaluation and strong engineering matter.
 
 **Selected writing**
 
-Co-authored
-[Navigating modern LLM architectures](https://wollenlabs.substack.com/p/navigating-modern-llm-architectures),
-a practical comparison of ReAct, Plan-and-Execute, ReWOO, Tree-of-Thoughts, and
-multi-agent patterns. Present this as evidence of technical communication, not
-as original research.
+- Co-authored [The Unseen Threat: Building Trust by Eradicating Algorithmic
+  Bias](https://wollenlabs.substack.com/p/the-unseen-threat-building-trust),
+  a technical overview of group-level evaluation, fairness criteria and their
+  trade-offs, causal reasoning, mitigation, governance, and monitoring.
+- Co-authored [Navigating modern LLM
+  architectures](https://wollenlabs.substack.com/p/navigating-modern-llm-architectures),
+  a practical comparison of ReAct, Plan-and-Execute, ReWOO, Tree-of-Thoughts,
+  and multi-agent patterns.
+
+Present both as evidence of technical synthesis and communication, not as
+original research. The MVP should use two compact article links rather than a
+full blog or publication archive.
 
 **Publication note:** keep examples anonymized until project-level disclosure
 permission and Santiago's exact ownership are confirmed. Add metrics only when
@@ -183,16 +195,18 @@ without reading as an application to a single company.
 - Convolutional KANs unless a later narrative genuinely needs it.
 - Unverified performance, adoption, scale, or business-impact metrics.
 - Exhaustive technology or course lists.
-- Testimonials, blog, CMS, analytics, contact form, or backend without a clear
-  need.
-- A standalone Writing section until there are at least two or three substantive
-  pieces worth maintaining.
+- Testimonials, personal blog, CMS, analytics, contact form, or backend without
+  a clear need.
+- A top-level Writing page or navigation item; the MVP only needs a compact
+  Selected writing block for the two co-authored Wollen Labs articles.
 - A claim of sole authorship for Bumbledesa.
 
 ## Content still required before implementation
 
-1. Approve English, Spanish, or bilingual direction.
-2. Select a public email and prepare the current CV.
+1. Approve the claims and structure in the English source draft, then write and
+   review natural Spanish copy with equivalent meaning.
+2. Select a public email and prepare the current CV in the language versions
+   that will be offered.
 3. Confirm Wollen Labs disclosure and ownership wording.
 4. Confirm Bumbledesa ownership wording and any final result or grade.
 5. Prepare sanitized Bumbledesa assets.
