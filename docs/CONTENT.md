@@ -43,13 +43,14 @@ AI Engineer
 
 **Headline**
 
-I build reliable AI systems from model behavior to production software.
+Reliable AI, end to end.
 
 **Supporting copy**
 
-I design and implement end-to-end AI applications, combining machine learning,
-data pipelines, APIs, integrations, and observability. I am completing a degree
-in Artificial Intelligence Engineering at Universidad de San Andrés.
+I design and implement end-to-end AI systems, from classical machine learning
+to agentic systems, bringing together data, models, rigorous evaluation, and
+production software to solve real-world problems. I am completing a degree in
+Artificial Intelligence Engineering at Universidad de San Andrés.
 
 **Primary actions**
 
@@ -72,7 +73,7 @@ demanding ML/AI problems where sound evaluation and strong engineering matter.
 
 ## Experience
 
-### AI Engineer - Wollen Labs
+### AI Engineer - Wollen Labs (now Luno)
 
 **April 2025 - April 2026**
 
@@ -88,11 +89,13 @@ demanding ML/AI problems where sound evaluation and strong engineering matter.
 
 **Selected writing**
 
-- Co-authored [The Unseen Threat: Building Trust by Eradicating Algorithmic
+Technical articles I wrote or co-authored:
+
+- [The Unseen Threat: Building Trust by Eradicating Algorithmic
   Bias](https://wollenlabs.substack.com/p/the-unseen-threat-building-trust),
   a technical overview of group-level evaluation, fairness criteria and their
   trade-offs, causal reasoning, mitigation, governance, and monitoring.
-- Co-authored [Navigating modern LLM
+- [Navigating modern LLM
   architectures](https://wollenlabs.substack.com/p/navigating-modern-llm-architectures),
   a practical comparison of ReAct, Plan-and-Execute, ReWOO, Tree-of-Thoughts,
   and multi-agent patterns.
@@ -169,9 +172,27 @@ selected-work section until Santiago chooses to revisit it.
 Coursework expected to be completed in November 2026. Thesis defense planned for
 February or March 2027.
 
-The degree combines mathematical and algorithmic foundations with machine
-learning, language, vision, reinforcement learning, robotics, data systems,
-software engineering, and responsible AI.
+The degree combines mathematical and algorithmic foundations with classical
+machine learning, deep learning, computer vision, natural language processing,
+reinforcement learning, autonomous robotics, data systems, software engineering,
+cybersecurity, and responsible AI.
+
+The program has been practical as well as theoretical: coursework and projects
+involved implementing and evaluating models, building data and training
+pipelines, and taking software systems through testing, integration, deployment,
+and observability.
+
+**Representative areas**
+
+- Models and representations: neural networks, CNNs, recurrent models,
+  transformers, normalizing flows, diffusion models, multimodal models,
+  self-supervised and contrastive learning, and multitask learning.
+- Learning and decision-making: classical ML, reinforcement learning, value- and
+  policy-based methods, actor-critic architectures, probabilistic robotics,
+  planning, and sensor fusion.
+- Systems and responsibility: databases, streaming, APIs, distributed systems,
+  testing, CI/CD, Kubernetes, observability, security, fairness, privacy, and AI
+  governance.
 
 Do not publish the current course count or grade average unless Santiago decides
 that it improves the page and the figures are refreshed immediately before
@@ -184,7 +205,7 @@ ambitious projects.
 
 - GitHub: https://github.com/SantiPourteau
 - LinkedIn: https://www.linkedin.com/in/santiago-pourteau-1bba8619a/
-- Email: pending selection of a public address
+- Email: santi.pourteau@gmail.com
 
 Do not mention YPF in the page copy. The portfolio should support that goal
 without reading as an application to a single company.
@@ -205,8 +226,7 @@ without reading as an application to a single company.
 
 1. Approve the claims and structure in the English source draft, then write and
    review natural Spanish copy with equivalent meaning.
-2. Select a public email and prepare the current CV in the language versions
-   that will be offered.
+2. Prepare the current CV in the language versions that will be offered.
 3. Confirm Wollen Labs disclosure and ownership wording.
 4. Confirm Bumbledesa ownership wording and any final result or grade.
 5. Prepare sanitized Bumbledesa assets.

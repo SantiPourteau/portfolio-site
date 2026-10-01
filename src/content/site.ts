@@ -43,7 +43,10 @@ type SiteContent = {
     institution: string;
     degree: string;
     status: string;
+    timeline: string;
     summary: string;
+    practice: string;
+    areas: Array<{ title: string; detail: string }>;
   };
   writing: {
     title: string;
@@ -53,6 +56,7 @@ type SiteContent = {
   contact: {
     title: string;
     body: string;
+    emailLabel: string;
   };
   footer: string;
 };
@@ -79,9 +83,9 @@ export const siteContent: Record<Locale, SiteContent> = {
     ],
     hero: {
       eyebrow: "AI Engineer",
-      headline: "I build reliable AI systems from model behavior to production software.",
+      headline: "Reliable AI, end to end.",
       supportingCopy:
-        "I design and implement end-to-end AI applications, combining machine learning, data pipelines, APIs, integrations, and observability.",
+        "I design and implement end-to-end AI systems, from classical machine learning to agentic systems, bringing together data, models, rigorous evaluation, and production software to solve real-world problems.",
       workAction: "View selected work",
     },
     about: {
@@ -92,7 +96,7 @@ export const siteContent: Record<Locale, SiteContent> = {
     experience: {
       title: "Experience",
       role: "AI Engineer",
-      company: "Wollen Labs",
+      company: "Wollen Labs (now Luno)",
       dates: "April 2025 — April 2026",
       bullets: [
         "Translated business and client requirements into feasible AI system designs.",
@@ -113,12 +117,33 @@ export const siteContent: Record<Locale, SiteContent> = {
       institution: "Universidad de San Andrés",
       degree: "Artificial Intelligence Engineering",
       status: "In progress",
-      summary:
+      timeline:
         "Coursework is expected to be completed in November 2026, with the thesis defense planned for February or March 2027.",
+      summary:
+        "Coursework combines mathematical and algorithmic foundations with classical machine learning, deep learning, computer vision, natural language processing, reinforcement learning, autonomous robotics, data systems, software engineering, cybersecurity, and responsible AI.",
+      practice:
+        "The program has been practical as well as theoretical: coursework and projects involved implementing and evaluating models, building data and training pipelines, and taking software systems through testing, integration, deployment, and observability.",
+      areas: [
+        {
+          title: "Models and representations",
+          detail:
+            "Neural networks, CNNs, recurrent models, transformers, normalizing flows, diffusion models, multimodal models, self-supervised and contrastive learning, and multitask learning.",
+        },
+        {
+          title: "Learning and decision-making",
+          detail:
+            "Classical ML, reinforcement learning, value- and policy-based methods, actor-critic architectures, probabilistic robotics, planning, and sensor fusion.",
+        },
+        {
+          title: "Systems and responsibility",
+          detail:
+            "Databases, streaming, APIs, distributed systems, testing, CI/CD, Kubernetes, observability, security, fairness, privacy, and AI governance.",
+        },
+      ],
     },
     writing: {
       title: "Selected writing",
-      introduction: "Co-authored technical articles published by Wollen Labs.",
+      introduction: "Technical articles I wrote or co-authored.",
       articles: [
         {
           title: "The Unseen Threat: Building Trust by Eradicating Algorithmic Bias",
@@ -137,6 +162,7 @@ export const siteContent: Record<Locale, SiteContent> = {
     contact: {
       title: "Contact",
       body: "I am open to conversations about ML and AI engineering roles and technically ambitious projects.",
+      emailLabel: "Email me",
     },
     footer: "Built as a bilingual, static portfolio.",
   },
@@ -161,9 +187,9 @@ export const siteContent: Record<Locale, SiteContent> = {
     ],
     hero: {
       eyebrow: "Ingeniero de IA",
-      headline: "Construyo sistemas de IA confiables, desde el comportamiento del modelo hasta el software en producción.",
+      headline: "IA confiable, de punta a punta.",
       supportingCopy:
-        "Diseño e implemento aplicaciones de IA de punta a punta, combinando machine learning, pipelines de datos, APIs, integraciones y observabilidad.",
+        "Diseño e implemento sistemas de IA de punta a punta, desde machine learning clásico hasta sistemas agénticos, integrando datos, modelos, evaluación rigurosa y software de producción para resolver problemas reales.",
       workAction: "Ver proyectos destacados",
     },
     about: {
@@ -174,7 +200,7 @@ export const siteContent: Record<Locale, SiteContent> = {
     experience: {
       title: "Experiencia",
       role: "AI Engineer",
-      company: "Wollen Labs",
+      company: "Wollen Labs (actualmente Luno)",
       dates: "Abril de 2025 — abril de 2026",
       bullets: [
         "Traduje necesidades de negocio y de clientes en diseños viables de sistemas de IA.",
@@ -195,12 +221,33 @@ export const siteContent: Record<Locale, SiteContent> = {
       institution: "Universidad de San Andrés",
       degree: "Ingeniería en Inteligencia Artificial",
       status: "En curso",
-      summary:
+      timeline:
         "Finalización de materias prevista para noviembre de 2026 y defensa de tesis planificada para febrero o marzo de 2027.",
+      summary:
+        "La carrera combina fundamentos matemáticos y algorítmicos con machine learning clásico, deep learning, visión por computadora, procesamiento del lenguaje natural, aprendizaje por refuerzo, robótica autónoma, sistemas de datos, ingeniería de software, ciberseguridad e IA responsable.",
+      practice:
+        "La formación fue práctica además de teórica: las materias y sus proyectos incluyeron implementar y evaluar modelos, construir pipelines de datos y entrenamiento, y llevar sistemas de software por etapas de testing, integración, despliegue y observabilidad.",
+      areas: [
+        {
+          title: "Modelos y representaciones",
+          detail:
+            "Redes neuronales, CNNs, modelos recurrentes, transformers, normalizing flows, modelos de difusión y multimodales, aprendizaje autosupervisado y contrastivo, y aprendizaje multitarea.",
+        },
+        {
+          title: "Aprendizaje y toma de decisiones",
+          detail:
+            "ML clásico, aprendizaje por refuerzo, métodos basados en valor y políticas, arquitecturas actor-critic, robótica probabilística, planificación y fusión de sensores.",
+        },
+        {
+          title: "Sistemas y responsabilidad",
+          detail:
+            "Bases de datos, streaming, APIs, sistemas distribuidos, testing, CI/CD, Kubernetes, observabilidad, seguridad, equidad, privacidad y gobernanza de IA.",
+        },
+      ],
     },
     writing: {
       title: "Escritura seleccionada",
-      introduction: "Artículos técnicos coescritos y publicados por Wollen Labs.",
+      introduction: "Artículos técnicos que escribí o coescribí.",
       articles: [
         {
           title: "The Unseen Threat: Building Trust by Eradicating Algorithmic Bias",
@@ -219,6 +266,7 @@ export const siteContent: Record<Locale, SiteContent> = {
     contact: {
       title: "Contacto",
       body: "Estoy abierto a conversar sobre roles de ingeniería de ML e IA y proyectos técnicamente ambiciosos.",
+      emailLabel: "Escribime",
     },
     footer: "Construido como un portafolio bilingüe y estático.",
   },
