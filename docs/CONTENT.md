@@ -81,6 +81,14 @@ demanding ML/AI problems where sound evaluation and strong engineering matter.
   harmonization, conversational business analytics, automated research, and
   messaging assistants.
 
+**Selected writing**
+
+Co-authored
+[Navigating modern LLM architectures](https://wollenlabs.substack.com/p/navigating-modern-llm-architectures),
+a practical comparison of ReAct, Plan-and-Execute, ReWOO, Tree-of-Thoughts, and
+multi-agent patterns. Present this as evidence of technical communication, not
+as original research.
+
 **Publication note:** keep examples anonymized until project-level disclosure
 permission and Santiago's exact ownership are confirmed. Add metrics only when
 they are documented and safe to publish.
@@ -177,6 +185,8 @@ without reading as an application to a single company.
 - Exhaustive technology or course lists.
 - Testimonials, blog, CMS, analytics, contact form, or backend without a clear
   need.
+- A standalone Writing section until there are at least two or three substantive
+  pieces worth maintaining.
 - A claim of sole authorship for Bumbledesa.
 
 ## Content still required before implementation
